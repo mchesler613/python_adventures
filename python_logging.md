@@ -262,7 +262,7 @@ You won!
 
 # Conclusion
 
-The standard Python `logging` library is a flexible and versatile utility that lets a developer implement a simple file-logging mechanism with the least amount of code.  You can use my `Logger` class in many logable applications which requires:
+The standard Python `logging` library is a flexible and versatile utility that lets a developer implement a simple file-logging mechanism with the least amount of code.  Feel free to reuse my `Logger` class in any logable application which requires:
 
 - saving the transcript in a chatbot session
 - saving data from one program to be fed to another program
@@ -271,4 +271,4 @@ The standard Python `logging` library is a flexible and versatile utility that l
 - saving application configuration or settings data
 - saving game states
 
-and much more. Let me know if you find this tutorial useful for your personal and commercial use.  Please share this knowledge with others.  Thank you for reading.
+and much more. Let me know if you find this tutorial useful for your personal and commercial use.  Thank you for reading.
