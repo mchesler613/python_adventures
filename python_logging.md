@@ -17,7 +17,7 @@ At the end of this article you should be able to:
 + understand how not to use the Python logging library
 
 # Background
-As software developers, we often ourselves using the Python `print()` function for debugging and/or displaying information to ourselves and our program users. What if we want to also capture some of these information in the local filesystem to be studied later or hand off to a third-party? Instead of reinventing the wheel by creating our own library to handle logging, we can take advantage of some of the useful features in the standard Python logging package.
+As software developers, we often find ourselves using the Python `print()` function for debugging and/or displaying information to ourselves and our program users. What if we want to also capture some of these information in the local filesystem to be studied later or hand off to a third-party? Instead of reinventing the wheel by creating our own library to handle logging, we can take advantage of some of the useful features in the standard Python logging package.
 
 # Logging Levels
 
