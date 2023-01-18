@@ -70,8 +70,10 @@ To log `INFO`-level messages, we can alter the basic configuration of the `loggi
 ```python
 >>> import logging
 >>> logging.basicConfig(level=logging.INFO)
->>> logging.info('hello')                                                 INFO:root:hello                                                           
->>> logging.warning('hello')                                             WARNING:root:hello 
+>>> logging.info('hello')                                                 
+INFO:root:hello                                                           
+>>> logging.warning('hello')                                           
+WARNING:root:hello 
 ```
 
 What this does is that it allows us to log both `INFO` and `WARNING` level messages. Notice that the logged messages include a label, `INFO:root:` or `WARNING:root:` before the message.  The basic configuration formats the log message as follows:
@@ -180,7 +182,7 @@ A sample demo project that uses the logging features above is available [here](h
   1 import logging
   2
   3
- 4 class Logger:
+  4 class Logger:
   5     """
   6     This class is a representation of a logging object
   7     with a custom file handler for logging INFO-level custom messages
