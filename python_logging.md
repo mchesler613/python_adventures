@@ -141,7 +141,7 @@ One benefit of creating child loggers is to be able to customize each one with i
 
 ## logging.FileHandler
 
-Then, we create a `FileHandler` object with a filename, `log_one.txt`, and file writing mode, `w`, to overwrite the file content each time it's opened.  The default `FileHandler` has an file mode of `a`, which appends to the associated file's existing content.
+Then, we create a `FileHandler` object with a filename, `log_one.txt`, and file writing mode, `w`, to overwrite the file content each time it's opened.  The default `FileHandler` has a file mode of `a`, which appends to the associated file's existing content.
 
 >class FileHandler(StreamHandler):
 >    """
@@ -150,7 +150,7 @@ Then, we create a `FileHandler` object with a filename, `log_one.txt`, and file 
 >
 >​    def __init__(self, filename, mode='a', encoding=None, delay=False, errors=None):
 
-The `FileHandler`, a child class of `StreamHandler`, subclasses from `Handler` which initializes the logging level to `NOTSET`.  
+The `FileHandler`, a child class of `StreamHandler`, is also a grandchild of `Handler` which initializes the logging level to `NOTSET`.  
 
 >class Handler(Filterer):
 >"""
@@ -168,7 +168,7 @@ So, we have to explicitly set the `FileHandler`'s logging level to `INFO` via `s
 
 We then register the `FileHandler` object with the child logger, via `addHandler()`.
 
-Notice that we don't have to explicitly format the log record in the above example.  This is because a _default_ `Formatter` object does not format the message at all. If all we want is to log the raw message as it is, we can skip creating a custom `Formatter` object.
+Notice that we don't have to explicitly format the log record in the above example.  This is because there is a _default_ `Formatter` object associated with the `FileHandler`which does not format the message at all. If all we want is to log the raw message as it is, we can skip creating a custom `Formatter` object.
 
 >[Formatter Objects](https://docs.python.org/3/library/logging.html#formatter-objects)
 
