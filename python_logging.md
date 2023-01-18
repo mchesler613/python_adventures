@@ -108,7 +108,7 @@ The prior examples show us how to log `INFO`-level messages on the console. What
 >>> import logging
 >>> log_one = logging.getLogger('root.one')
 >>> log_one
-<Logger one (WARNING)>
+<Logger root.one (WARNING)>
 >>> log_one.setLevel(logging.INFO)
 >>> log_one
 <Logger root.one (INFO)>
