@@ -214,7 +214,7 @@ A sample demo project that uses the logging features above is available [here](h
  33         self.logger.info(message)
 ```
 
-In this demo, I created two `Logger` clients, `Busybody` and `TicTacToe`, two games that illicit responses from the user and log them.  Here is a sample log file from a tictactoe game session:
+In this demo, I created two `Logger` clients, `Busybody` and `TicTacToe`, two games that elicit responses from the user and log them.  Here is a sample log file from a tictactoe game session:
 
 ```
 $ cat logs/tictactoe.log
